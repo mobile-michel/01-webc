@@ -1,7 +1,7 @@
 {
-  "name": "1d-basic-liquid-simple",
+  "name": "01-webc",
   "version": "1.0.0",
-  "description": "Eleventy 2.0.1 basic template with Liquid templating & Simple CSS framework",
+  "description": "WebC for web components with Eleventy, Liquid & Simple.css framework",
   "main": "eleventy.config.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
@@ -11,6 +11,7 @@
   "keywords": [
     "eleventy",
     "liquid",
+    "webc",
     "simple"
   ],
   "author": "Michel Maillard",

@@ -1,9 +1,9 @@
 {
-    "name": "01-basic-liquid-simple",
-    "description": "Eleventy 2.0.1 basic template with Liquid templating & Simple CSS framework.",
-    "github": "https://github.com/mobile-michel/01-basic-liquid-simple",
+    "name": "01-webc",
+    "description": "WebC for web components with Eleventy, Liquid & Simple.css framework.",
+    "github": "https://github.com/mobile-michel/01-webc",
     "authorName": "Michel Maillard",
     "authorUrl": "https://michelmaillard.ch/",
     "favicon": "https://11ty.recipes/images/meta/favicon.svg",
-    "css": "/assets/css/simple.min.css"
+    "css": "../assets/css/simple.min.css"
 }

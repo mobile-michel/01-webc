@@ -1,17 +1,18 @@
-# Basic template with Eleventy, Liquid & Simple CSS framework
+# Webc for web components with Eleventy, Liquid & Simple.css framework
 
 ## Folder structure
 - pages in /src
 - layouts in /_layouts
 - includes in /_includes
+- components in /_components
 - Json files in /_data
 - Simple CSS in /assets/css
 - images in /assets/images
 
 ## Page layout
-- _layouts/base.liquid
-- _includes/header.liquid
-- _includes/footer.liquid
+- _layouts/base.webc
+- _includes/header.webc
+- _includes/footer.webc
 
 ## Primary navigation
 - add tags in frontmatter: primary
@@ -22,11 +23,19 @@
 - "debug": "DEBUG=* eleventy"
 
 ## Dependencies
-- "@11ty/eleventy": "^2.0.1"
+- "@11ty/eleventy": "^2.0.1",
+- "@11ty/eleventy-plugin-webc": "^0.11.2",
+- "@11ty/webc": "^0.11.4"
 
 ## eleventy.config.js
 ```
+const pluginWebc = require('@11ty/eleventy-plugin-webc')
+
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(pluginWebc, {
+        // (The default changed from `false` in Eleventy WebC v0.7.0)
+        components: "src/_components/**/*.webc"
+    });
     eleventyConfig.addPassthroughCopy("src/assets"); // Scss, JS, and images files
     return {
         dir: {
