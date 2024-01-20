@@ -1,0 +1,16 @@
+<!-- site-footer.webc -->
+<footer>
+  <p>&copy; 2022 Yours Truly</p>
+</footer>
+
+<style webc:scoped>
+  :host {
+    padding-block: 3rem;
+    padding-inline: 1rem;
+  }
+
+  :host footer > p {
+    font-family: sans-serif;
+    color: blue;
+  }
+</style>

@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My first WebC</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/simple.min.css">
+    <style @raw="getBundle('css')" webc:keep></style>
+  </head>
+  <body>
+    <theme-select></theme-select>
+    <template @html="this.content" webc:nokeep></template>
+    <script type="module" @raw="getBundle('js')" webc:keep></script>
+  </body>
+</html>

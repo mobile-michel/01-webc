@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<main>
+  <h1>Hello, there</h1>
+
+  <my-first-component></my-first-component>
+
+  <a-card>
+    <a href="https://i.gifer.com/" slot="title">The Hypnotoad</a>
+    <img src="https://i.gifer.com/29A1.gif" slot="media">
+    <p slot="body">All glory to the Hypnotoad...</p>
+  </a-card>
+
+  <site-footer></site-footer>
+</main>

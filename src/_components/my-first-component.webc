@@ -1,0 +1,31 @@
+<p class="call">General Kenobi</p>
+<style>
+  .call {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(122, 255, 122);
+  }
+  .call::after {
+    content: '!';
+  }
+  .response {
+    color: blue;
+    text-decoration: underline;
+  }
+</style>
+<script>
+  class MyFirstComponent extends HTMLElement {
+    connectedCallback() {
+      setTimeout(() => {
+        this.appendMessage('This will make a fine addition to my collection')
+      }, 2_000)
+    }
+    appendMessage(message) {
+      const p = document.createElement('p')
+      p.textContent = message
+      p.classList.add('message')
+      this.appendChild(p)
+    }
+  }
+  window.customElements.define('my-first-component', MyFirstComponent)
+</script>

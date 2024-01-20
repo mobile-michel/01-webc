@@ -1,0 +1,12 @@
+<header>
+  <nav aria-label="primary">
+    <ul>
+      <li><a href="/">Home</a></li>
+      {% for nav in collections.primary %}
+      <li>
+        <a {% if page.url==nav.url %}class="current"{% endif %} href="{{ nav.url }}">{{ nav.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
